@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #8a9944;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #707c37 0,
+    #707c37 20px,
+    transparent 20px,
+    transparent 60px
+  );
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}

@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+
+  div {
+    color: white;
+    padding: 32px;
+    font-weight: 900;
+  }
+}
