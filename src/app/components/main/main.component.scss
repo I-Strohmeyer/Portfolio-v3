@@ -4,4 +4,30 @@
   background-color: white;
   display: flex;
   flex-direction: row;
+
+  main {
+    padding: 32px;
+
+    h1 {
+      font-size: 64px;
+      font-family: "DM Serif Display", serif;
+      margin-bottom: 64px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+
+      div {
+        width: 50%;
+      }
+
+      p {
+        display: flex;
+        width: 50%;
+        line-height: 200%;
+      }
+    }
+  }
 }
