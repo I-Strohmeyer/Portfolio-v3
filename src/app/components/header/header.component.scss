@@ -12,12 +12,9 @@
     align-items: center;
     color: white;
 
-    div {
-      color: white;
-      padding: 32px;
-      font-weight: 900;
-      border: 1px solid white;
-      border-radius: 50%;
+    img {
+      height: 36px;
+      width: auto;
       margin-left: 32px;
     }
 
@@ -29,7 +26,7 @@
         font-size: 20px;
         margin-left: 48px;
         font-weight: bold;
-        border-bottom: 1px solid white;
+        /*border-bottom: 1px solid white; */
 
         cursor: pointer;
         padding: 12px;
