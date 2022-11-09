@@ -1,7 +1,6 @@
 :host {
   width: 87%;
-  height: 400px;
-  background-color: #353535;
+  background-color: #35353580;
   /* #212121 */
   display: flex;
   flex-direction: row;
@@ -21,15 +20,59 @@
       justify-content: flex-end;
       flex-direction: row;
 
-      div {
+      .pic-wrapper {
         width: 50%;
+        padding: 8px;
+        border: 1px solid white;
+
+        img {
+          width: 100%;
+          transform: rotate(-2deg);
+        }
       }
 
-      p {
+      .text-wrapper {
         display: flex;
         width: 50%;
-        line-height: 200%;
+        padding: 20px;
+        justify-content: center;
+        flex-direction: column;
+
+        h3 {
+          font-size: 48px;
+          font-weight: bold;
+          text-align: left;
+          margin-bottom: 20px;
+        }
+
+        .nice {
+          /*font-family: "DM Serif Display", serif; */
+          background-image: linear-gradient(90deg, green, blue, purple);
+          background: linear-gradient(
+            90deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(253, 187, 45, 1) 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        p {
+          display: flex;
+          line-height: 200%;
+          width: 80%;
+          font-size: 20px;
+        }
       }
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      margin-top: 140px;
     }
   }
 }

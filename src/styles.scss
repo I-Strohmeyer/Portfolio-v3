@@ -135,10 +135,18 @@ table {
 /* Custom Styles */
 * {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
   min-height: 100vh;
   background-color: #000;
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.display {
+  font-family: "DM Serif Display", serif;
 }
