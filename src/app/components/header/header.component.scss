@@ -5,18 +5,27 @@
   width: 87%;
   align-items: center;
 
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding-right: 32px;
+  }
+
+  .logo {
+    height: 36px;
+    width: auto;
+    margin-left: 48px;
+
+    @media (max-width: 1200px) {
+      margin-left: 32px;
+    }
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     color: white;
-
-    img {
-      height: 36px;
-      width: auto;
-      margin-left: 32px;
-    }
 
     ul {
       display: flex;
@@ -26,8 +35,6 @@
         font-size: 20px;
         margin-left: 48px;
         font-weight: bold;
-        /*border-bottom: 1px solid white; */
-
         cursor: pointer;
         padding: 12px;
       }

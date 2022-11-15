@@ -1,21 +1,56 @@
 :host {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 120px;
+  align-items: center;
 
-  article {
+  .project-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 40px;
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
+    gap: 120px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .align {
+    text-align: center;
+  }
+
+  .big-card {
+    display: grid;
     height: 400px;
-    gap: 40px;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, minmax(460px, 1fr));
+    grid-template-rows: auto;
+
+    @media (max-width: 1050px) {
+      grid-template-columns: minmax(320px, 500px);
+      grid-gap: 24px;
+    }
+  }
+
+  .reverse-content {
+    grid-area: content;
+  }
+
+  .reverse-img {
+    grid-area: image;
+  }
+
+  .reverse-big-card {
+    grid-template-areas: "content image";
+
+    @media (max-width: 1050px) {
+      grid-template-areas:
+        "image"
+        "content";
+    }
   }
 
   .content {
     display: flex;
     flex-direction: column;
-    width: 40%;
     justify-content: center;
 
     .text {
@@ -31,6 +66,10 @@
       p {
         font-size: 20px;
         margin-bottom: 12px;
+      }
+
+      .tech {
+        color: lightgrey;
       }
     }
 
@@ -51,7 +90,6 @@
 
   .img {
     display: flex;
-    width: 40%;
     border: 1px solid white;
     align-items: center;
     justify-content: center;
@@ -64,7 +102,31 @@
     }
   }
 
-  .reverse {
-    flex-direction: row-reverse;
+  .project-cards {
+    margin-top: 120px;
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: auto;
+    gap: 40px;
+
+    .box {
+      border-left: 1px solid white;
+      padding: 12px;
+
+      h5 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        margin-bottom: 8px;
+      }
+
+      span {
+        color: lightgray;
+      }
+    }
   }
 }
