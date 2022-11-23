@@ -1,6 +1,26 @@
 :host {
-  p {
-    max-width: 600px;
-    padding-bottom: 80px;
+  .box-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 42px;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 32px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .color {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 150%;
+      font-size: 24px;
+    }
   }
 }
