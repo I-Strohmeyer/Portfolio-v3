@@ -19,7 +19,14 @@
     }
 
     app-hero,
-    app-project,
+    app-project {
+      margin-bottom: 240px;
+
+      @media (max-width: 600px) {
+        margin-bottom: 160px;
+      }
+    }
+
     app-about {
       margin-bottom: 120px;
     }

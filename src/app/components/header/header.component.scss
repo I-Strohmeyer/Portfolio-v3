@@ -8,6 +8,7 @@
   @media (max-width: 1200px) {
     width: 100%;
     padding-right: 32px;
+    height: 100px;
   }
 
   .logo {
@@ -55,12 +56,20 @@
         font-weight: bold;
         cursor: pointer;
         padding: 12px;
+        transition: all 0.2s;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          border-bottom: 2px solid rgb(34, 193, 195);
+        }
       }
     }
 
     .mobile-menu {
       height: 50px;
       width: 50px;
+      /* Hidden for now*/
+      display: none;
 
       @media (min-width: 721px) {
         display: none;
